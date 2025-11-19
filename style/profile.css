@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allows wrapping on small screens */
+    flex-wrap: wrap; 
     padding: 16px 5%;
     max-width: 1400px;
     margin: 0 auto;
@@ -174,7 +174,7 @@ body > p:nth-of-type(1) {
     background-color: #e0e0e0;
 }
 
-.per_info > img { /* Profile Logo */
+.per_info > img { 
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -182,13 +182,13 @@ body > p:nth-of-type(1) {
     border: 3px solid #f0f0f0;
 }
 
-.per_info h3 { /* Ritam Mishra */
+.per_info h3 { 
     font-size: 29px;
     font-weight: 900;
     margin-bottom: 0.25rem;
 }
 
-.per_info > p { /* Member since... */
+.per_info > p { 
     color: #777;
     font-size: 14px;
     margin-bottom: 32px;
@@ -232,10 +232,10 @@ body > p:nth-of-type(1) {
 
 /* --- Notification Preferences Card --- */
 .notif_pref {
-    padding-bottom: 16px; /* Less bottom padding */
+    padding-bottom: 16px; 
 }
 
-.notif_pref > img { /* Bell Icon */
+.notif_pref > img { 
     width: 24px;
     height: 24px;
     opacity: 0.6;
@@ -243,7 +243,7 @@ body > p:nth-of-type(1) {
     vertical-align: middle;
 }
 
-.notif_pref > p { /* "Notification Pref..." text */
+.notif_pref > p { 
     display: inline-block;
     font-size: 24px;
     font-weight: 300;
@@ -466,7 +466,7 @@ header {
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 2rem;
-            margin-top: auto; /* Pushes footer to bottom if used with flex body */
+            margin-top: auto; 
         }
 
         .footer > div {
@@ -474,26 +474,24 @@ header {
             min-width: 250px;
         }
 
-        /* Footer Logo Section */
         .footer .logo a {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 8px;
         }
 
-        /* Footer Social Section */
         .footer .social h5 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            font-size: 18px;
+            font-weight: 350;
+            margin-bottom: 16px;
             color: #333;
         }
 
         .footer .social_icons {
             width: 28px;
             height: 28px;
-            margin-right: 1rem;
-            margin-bottom: 0.5rem;
+            margin-right: 16px;
+            margin-bottom: 8px;
             cursor: pointer;
             opacity: 0.6;
             transition: opacity 0.3s, transform 0.3s;
@@ -504,34 +502,33 @@ header {
             transform: translateY(-3px);
         }
 
-        /* Footer Contact Section */
         .footer .contact h5 {
-            font-size: 1.1rem;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
             color: #333;
-            margin-top: 0; /* Reset for subsequent h5s */
+            margin-top: 0; 
         }
         
         .footer .contact h5:nth-of-type(2) {
-            margin-top: 1.5rem;
+            margin-top: 24px;
         }
 
         .footer .contact p {
             color: #666;
-            margin-bottom: 0.25rem;
-            font-size: 0.95rem;
+            margin-bottom: 4px;
+            font-size: 15px;
         }
 
         .footer .contact .tick {
-            color: #007bff;
-            font-weight: 700;
+            color: #004aad;
+            font-weight: 350;
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.3s;
         }
 
         .footer .contact .tick:hover {
-            border-color: #007bff;
+            border-color: #004aad;
         }
 
