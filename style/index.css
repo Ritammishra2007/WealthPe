@@ -1,4 +1,4 @@
-/* --- Base & Reset --- */
+--- Base & Reset ---
 * {
     box-sizing: border-box;
     margin: 0;
@@ -341,3 +341,82 @@ header {
     color: #777;
     padding: 0 0 0 16px;
 }
+
+
+.footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e0e0e0;
+            padding: 4rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: auto; /* Pushes footer to bottom if used with flex body */
+        }
+
+        .footer > div {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Footer Logo Section */
+        .footer .logo a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Footer Social Section */
+        .footer .social h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .footer .social_icons {
+            width: 28px;
+            height: 28px;
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .footer .social_icons:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Contact Section */
+        .footer .contact h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #333;
+            margin-top: 0; /* Reset for subsequent h5s */
+        }
+        
+        .footer .contact h5:nth-of-type(2) {
+            margin-top: 1.5rem;
+        }
+
+        .footer .contact p {
+            color: #666;
+            margin-bottom: 0.25rem;
+            font-size: 0.95rem;
+        }
+
+        .footer .contact .tick {
+            color: #007bff;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .footer .contact .tick:hover {
+            border-color: #007bff;
+        }
+
