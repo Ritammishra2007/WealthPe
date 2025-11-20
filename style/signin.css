@@ -178,175 +178,123 @@ header {
     border-color: #004aad;
 }
 
+/* Signup form */
 
-/* --- Page Layout & Titles --- */
-body > h2 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 48px;
-    margin-bottom: 32px;
-    color: #111;
+.signup_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 20px;
+    flex-grow: 1;
 }
 
-
-.qr, .mon_tans, .bill_pay, .recent_payment {
-    max-width: 1000px;
-    margin: 0 auto 24px auto; 
+.signup_form form {
     background-color: #ffffff;
-    padding: 32px;
+    padding: 48px 40px; 
+    width: 100%;
+    max-width: 400px; 
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-/* --- QR Section --- */
-.qr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     text-align: center;
-    padding: 40px;
 }
 
-.qr img.qr_ {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 16px;
-    transition: transform 0.3s ease;
-}
-
-.qr img.qr_:hover {
-    transform: scale(1.1);
-}
-
-.qr h2 {
-    font-size: 24px;
+.signup_form h2 {
+    font-size: 32px;
     font-weight: 900;
-    margin-bottom: 8px;
     color: #004aad;
+    margin-bottom: 8px;
 }
 
-.qr p {
+.signup_form > form > p:first-of-type {
+    color: #666;
     font-size: 16px;
-    color: #777;
-}
-
-/* Money Transfer and bill payment */
-.mon_tans h3, 
-.bill_pay h3,
-.recent_payment h3 {
-    font-size: 20px;
-    font-weight: 350; 
-    color: #555;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 12px;
+    margin-bottom: 32px;
+    font-weight: 350;
 }
 
 
-
-
-
-.mon_tans, .bill_pay {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 24px;
-    text-align: center;
-}
-
-
-.mon_tans h3, .bill_pay h3 {
-    grid-column: 1 / -1;
-    text-align: left;
-    display: block;
-}
-
-
-.mon_tans > div, .bill_pay > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 16px;
+.signup_form input[type="text"],
+.signup_form input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
+
+.signup_form input:focus {
+    outline: none;
+    border-color: #004aad;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.1);
+}
+
+
+.signup_form input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
     cursor: pointer;
+    accent-color: #004aad;
+    width: 16px;
+    height: 16px;
 }
 
-.mon_tans > div:hover, .bill_pay > div:hover {
-    background-color: #f4f8ff; 
-    transform: translateY(-5px);
-}
-
-
-.mon_tans img, .bill_pay img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
-
-.mon_tans p, .bill_pay p {
+.signup_form label {
+    color: #555;
     font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
     font-weight: 350;
-    color: #333;
 }
 
-/* --- Recent Payments --- */
-.recent_payment {
-    padding-bottom: 16px;
+.signup_form input[type="checkbox"], 
+.signup_form label {
+    display: inline-block;
+    margin-bottom: 24px;
 }
 
-.paymnt {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #f0f0f0;
+
+.signup_form input[type="checkbox"] {
+    margin-left: -8px; 
 }
 
-.paymnt:last-child {
-    border-bottom: none;
+
+/* Button Styling */
+.signup_form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #004aad;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; 
 }
 
-.paymnt h4 {
-    font-size: 17px;
-    font-weight: 400;
-    color: #333;
-    flex: 1;
-}
-
-.paymnt p:nth-of-type(1) { 
-    font-size: 14px;
-    color: #777;
-    margin-right: 24px;
-}
-
-.paymnt p:nth-of-type(2) {
-    font-size: 17px;
-    font-weight: 350;
-    color: #d9534f; 
-    min-width: 80px;
-    text-align: right;
+.signup_form button:hover {
+    background-color: #003885;
+    transform: translateY(-1px);
 }
 
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    .mon_tans, .bill_pay {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+@media (max-width: 600px) {
+    .signup_form {
+        padding: 32px 16px;
     }
     
-    .paymnt {
-        flex-wrap: wrap;
+    .signup_form form {
+        padding: 24px;
     }
     
-    .paymnt h4 {
-        width: 100%;
-        margin-bottom: 4px;
+    .signup_form h2 {
+        font-size: 28px;
     }
-    
-    .paymnt p:nth-of-type(1) {
-        margin-right: auto;
-    }
-}
+} 

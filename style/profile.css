@@ -1,4 +1,3 @@
---- Base & Reset ---
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,307 +16,11 @@ a {
     color: inherit;
 }
 
-
-
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
+section {
+    padding: 40px 5%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-    padding: 16px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo .logos {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 300;
-    font-size: 24px;
-}
-
-.pages {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.pages:nth-of-type(1) {
-    gap: 24px;
-}
-
-.nav-items {
-    font-weight: 300;
-    color: #555;
-    transition: color 0.3s ease;
-    padding: 8px 0;
-}
-
-.nav-items:hover {
-    color: #007bff;
-}
-
-.sign-in {
-    font-weight: 300;
-    color: #007bff;
-    padding: 8px 16px;
-}
-
-.sign-up {
-    font-weight: 300;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 19px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.sign-up:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-.profile .proicon {
-    display: block;
-}
-
-/* --- Page Heading --- */
-.heading {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 48px;
-    color: #111;
-}
-
-/* Subheading p tag */
-body > p:nth-of-type(1) {
-    text-align: center;
-    font-size: 19px;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-/* --- Profile Page Layout --- */
-.profile-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr; 
-    gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto 64px auto;
-    padding: 0 5%;
-}
-
-.profile-left {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.profile-right {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-/* --- General Card Style --- */
-.per_info,
-.notif_pref,
-.security,
-.saved_cards,
-.Tax_Docs,
-.help_support {
-    background-color: #ffffff;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    position: relative;
-}
-
-/* --- Personal Info Card --- */
-.per_info {
-    text-align: center;
-}
-
-.per_info h2 {
-    font-size: 24px;
-    font-weight: 300;
-    color: #111;
-    margin-bottom: 16px;
-}
-
-.per_info button {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.per_info button:hover {
-    background-color: #e0e0e0;
-}
-
-.per_info > img { 
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 16px;
-    border: 3px solid #f0f0f0;
-}
-
-.per_info h3 { 
-    font-size: 29px;
-    font-weight: 900;
-    margin-bottom: 0.25rem;
-}
-
-.per_info > p { 
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 32px;
-}
-
-.per_info h4 {
-    font-weight: 300;
-    color: #555;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 16px;
-}
-
-.email_add,
-.phone,
-.pan_no {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background-color: #f9f9f9;
-    padding: 12px 16px;
-    border-radius: 8px;
-    margin-top: 8px;
-}
-
-.email_add img,
-.phone img,
-.pan_no img {
-    width: 20px;
-    height: 20px;
-    opacity: 0.7;
-}
-
-.email_add p,
-.phone p,
-.pan_no p {
-    font-size: 16px;
-    font-weight: 300;
-    color: #333;
-}
-
-/* --- Notification Preferences Card --- */
-.notif_pref {
-    padding-bottom: 16px; 
-}
-
-.notif_pref > img { 
-    width: 24px;
-    height: 24px;
-    opacity: 0.6;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.notif_pref > p { 
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 300;
-    color: #111;
-    margin-bottom: 24px;
-}
-
-.rem1, .rem2, .rem3, .rem4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-top: 1px solid #f0f0f0;
-}
-
-.rem1 h4, .rem2 h4, .rem3 h4, .rem4 h4 {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 4px;
-}
-
-.rem1 p, .rem2 p, .rem3 p, .rem4 p {
-    font-size: 14px;
-    color: #777;
-}
-
-/* --- CSS Toggle Switch --- */
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 28px;
-    margin-left: 16px;
-    flex-shrink: 0;
-}
-
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 28px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: #007bff;
-}
-
-input:checked + .slider:before {
-    transform: translateX(22px);
-}
-
+/* --- Header & Navigation --- */
 header {
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -400,135 +103,378 @@ header {
 }
 
 
-/* Adiitional settings */
-.security > img{
-    width: 96px;
-    height: 56px;
+/* --- Footer --- */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 64px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.footer > div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .social h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.footer .social_icons {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.footer .social_icons:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.footer .contact h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+    margin-top: 0;
+}
+
+.footer .contact h5:nth-of-type(2) {
+    margin-top: 24px;
+}
+
+.footer .contact p {
+    color: #666;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.footer .contact .tick {
+    color: #004aad;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.footer .contact .tick:hover {
+    border-color: #004aad;
+}
+
+
+
+/* Page Title */
+.heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 48px;
+    color: #111;
+}
+
+body > p:first-of-type {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Common Card Style */
+.per_info,
+.notif_pref,
+.add_settings {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 800px; 
+    margin: 0 auto 24px auto; 
+    position: relative;
+}
+
+/* --- Personal Information Card --- */
+.per_info {
+    text-align: center;
+}
+
+.per_info h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+/* Edit Button */
+.per_info button {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 350;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.per_info button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Profile Image */
+.per_info > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 4px solid #f9f9f9;
+}
+
+.per_info h3 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.per_info > p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+/* Info Fields */
+.per_info h4 {
+    font-weight: 350;
+    color: #555;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.email_add,
+.phone,
+.pan_no {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f9f9f9;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.email_add:hover,
+.phone:hover,
+.pan_no:hover {
+    border-color: #004aad; /* Subtle highlight */
+}
+
+.email_add img,
+.phone img,
+.pan_no img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.email_add p,
+.phone p,
+.pan_no p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* --- Notification Preferences --- */
+.notif_pref > img {
+    width: 24px;
+    height: 24px;
     opacity: 0.6;
     margin-right: 8px;
     vertical-align: middle;
 }
-.saved_cards > img{
-    width: 96px;
-    height: 56px;
-    opacity: 0.6;
-    margin-right: 8px;
+
+.notif_pref > p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 350;
+    color: #111;
+    margin-bottom: 24px;
     vertical-align: middle;
 }
-.Tax_Docs > img{
-    width: 96px;
-    height: 56px;
-    opacity: 0.6;
-    margin-right: 8px;
-    vertical-align: middle;
+
+.rem1, .rem2, .rem3, .rem4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #f0f0f0;
 }
-.help_support > img{
-    width: 96px;
-    height: 56px;
-    opacity: 0.6;
-    margin-right: 8px;
-    vertical-align: middle;
+
+.rem1 h4, .rem2 h4, .rem3 h4, .rem4 h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
 }
-.add_settings{
+
+.rem1 p, .rem2 p, .rem3 p, .rem4 p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Toggle Switch CSS */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #004aad;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+
+.add_settings {
+    background-color: transparent; 
+    box-shadow: none; 
+    padding: 0; 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 20px;
-
+    gap: 20px;
 }
 
-.security:hover{
+.security,
+.saved_cards,
+.Tax_Docs,
+.help_support {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover Effects for Settings Grid */
+.security:hover,
+.saved_cards:hover,
+.Tax_Docs:hover,
+.help_support:hover {
     background-color: #004aad;
+    transform: translateY(-5px);
+}
+
+.security img,
+.saved_cards img,
+.Tax_Docs img,
+.help_support img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    opacity: 0.7;
+    transition: filter 0.3s;
+}
+
+.security h4,
+.saved_cards h4,
+.Tax_Docs h4,
+.help_support h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.security p,
+.saved_cards p,
+.Tax_Docs p,
+.help_support p {
+    font-size: 14px;
+    color: #777;
+    font-weight: 350;
+}
+
+
+.security:hover h4, .security:hover p,
+.saved_cards:hover h4, .saved_cards:hover p,
+.Tax_Docs:hover h4, .Tax_Docs:hover p,
+.help_support:hover h4, .help_support:hover p {
     color: #ffffff;
 }
-.saved_cards:hover{
-    background-color: #004aad;
-    color: #ffffff;
-}
-.Tax_Docs:hover{
-    background-color: #004aad;
-    color: #ffffff;
-}
-.help_support:hover{
-    background-color: #004aad;
-    color: #ffffff;
+
+.security:hover img,
+.saved_cards:hover img,
+.Tax_Docs:hover img,
+.help_support:hover img {
+    filter: brightness(0) invert(1); 
+    opacity: 1;
 }
 
-.help_support > img:hover{
-    filter:invert()
+
+@media (max-width: 768px) {
+    .add_settings {
+        grid-template-columns: 1fr; /* Stack grid items on mobile */
+    }
 }
-
-.footer {
-            background-color: #ffffff;
-            border-top: 1px solid #e0e0e0;
-            padding: 4rem 5%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-top: auto; 
-        }
-
-        .footer > div {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .footer .logo a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .footer .social h5 {
-            font-size: 18px;
-            font-weight: 350;
-            margin-bottom: 16px;
-            color: #333;
-        }
-
-        .footer .social_icons {
-            width: 28px;
-            height: 28px;
-            margin-right: 16px;
-            margin-bottom: 8px;
-            cursor: pointer;
-            opacity: 0.6;
-            transition: opacity 0.3s, transform 0.3s;
-        }
-
-        .footer .social_icons:hover {
-            opacity: 1;
-            transform: translateY(-3px);
-        }
-
-        .footer .contact h5 {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #333;
-            margin-top: 0; 
-        }
-        
-        .footer .contact h5:nth-of-type(2) {
-            margin-top: 24px;
-        }
-
-        .footer .contact p {
-            color: #666;
-            margin-bottom: 4px;
-            font-size: 15px;
-        }
-
-        .footer .contact .tick {
-            color: #004aad;
-            font-weight: 350;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s;
-        }
-
-        .footer .contact .tick:hover {
-            border-color: #004aad;
-        }
-
